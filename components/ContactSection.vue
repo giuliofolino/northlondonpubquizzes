@@ -16,7 +16,7 @@
         3. Replace YOUR_FORM_ID below with your actual ID (e.g. "xpwzgkla")
       -->
       <form
-        action="https://formspree.io/f/YOUR_FORM_ID"
+        action="https://formspree.io/f/maqpebrw"
         method="POST"
         class="space-y-6"
         @submit.prevent="handleSubmit"
@@ -89,7 +89,7 @@ const status = ref('idle') // idle | sending | sent | error
 async function handleSubmit() {
   status.value = 'sending'
   try {
-    const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    const response = await fetch('https://formspree.io/f/maqpebrw', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify(form.value),
