@@ -22,12 +22,12 @@
           :disabled="status === 'sending' || status === 'subscribed'"
           class="btn-primary whitespace-nowrap"
         >
-          {{ status === 'sending' ? 'Subscribing…' : status === 'subscribed' ? 'Subscribed!' : 'Subscribe' }}
+          {{ status === 'sending' ? 'Subscribing…' : status === 'subscribed' ? 'Check Your Inbox!' : 'Subscribe' }}
         </button>
       </form>
 
       <p v-if="status === 'subscribed'" class="mt-4 font-sans text-sm text-muted">
-        You're on the list. See you at the next quiz!
+        Almost there — check your inbox for a confirmation email and click the link to complete your sign-up.
       </p>
       <p v-if="status === 'error'" class="mt-4 font-sans text-sm text-red-400">
         Something went wrong. Please try again.
