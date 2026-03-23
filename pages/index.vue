@@ -14,6 +14,8 @@
       <RainbowDivider />
       <MailingSection />
       <RainbowDivider />
+      <CorporateSection />
+      <RainbowDivider />
       <ContactSection />
     </main>
     <TheFooter />
