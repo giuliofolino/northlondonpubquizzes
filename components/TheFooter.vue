@@ -28,7 +28,7 @@
 
           <!-- Eventbrite -->
           <a
-            href="https://www.eventbrite.co.uk/e/boyband-vs-girlband-quiz-tickets-1982508818243?aff=oddtdtcreator"
+            href="https://www.eventbrite.co.uk/o/north-london-pub-quizzes-59899390063"
             target="_blank"
             rel="noopener noreferrer"
             class="font-sans text-xs tracking-[0.1em] uppercase text-muted hover:text-chalk transition-colors"
