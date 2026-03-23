@@ -40,22 +40,47 @@
 const email = ref('')
 const status = ref('idle') // idle | sending | subscribed | error
 
-async function handleSubmit() {
+function handleSubmit() {
   status.value = 'sending'
-  try {
-    const params = new URLSearchParams({ 'fields[email]': email.value })
-    const response = await fetch(
-      `https://assets.mailerlite.com/jsonp/1823960/forms/181507484247131920/subscribe?${params}`,
-      { method: 'GET' }
-    )
-    if (response.ok) {
+
+  const callbackName = `ml_cb_${Date.now()}`
+
+  const timeout = setTimeout(() => {
+    cleanup()
+    status.value = 'error'
+  }, 8000)
+
+  function cleanup() {
+    clearTimeout(timeout)
+    delete window[callbackName]
+    const el = document.getElementById(callbackName)
+    if (el) el.remove()
+  }
+
+  window[callbackName] = (response) => {
+    cleanup()
+    if (response && response.success) {
       status.value = 'subscribed'
       email.value = ''
     } else {
       status.value = 'error'
     }
-  } catch {
+  }
+
+  const params = new URLSearchParams({
+    'fields[email]': email.value,
+    'ml-submit': '1',
+    anticsrf: 'true',
+    callback: callbackName,
+  })
+
+  const script = document.createElement('script')
+  script.id = callbackName
+  script.src = `https://assets.mailerlite.com/jsonp/1823960/forms/181507484247131920/subscribe?${params}`
+  script.onerror = () => {
+    cleanup()
     status.value = 'error'
   }
+  document.head.appendChild(script)
 }
 </script>
