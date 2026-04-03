@@ -18,8 +18,8 @@
           <h3 class="font-display text-2xl font-bold text-chalk mb-4">When</h3>
           <p class="font-sans text-muted leading-relaxed text-sm">
             Once every two months.<br /><br />
-            Doors &amp; bar from <span class="text-chalk font-medium">6:30pm</span><br />
-            Quiz starts <span class="text-chalk font-medium">7:00pm sharp</span>
+            Bar &amp; food available from <span class="text-chalk font-medium">6pm</span><br />
+            Quiz starts <span class="text-chalk font-medium">7:30pm sharp</span>
           </p>
         </div>
 
@@ -58,10 +58,8 @@
           </div>
           <h3 class="font-display text-2xl font-bold text-chalk mb-4">How It Works</h3>
           <p class="font-sans text-muted leading-relaxed text-sm">
-            Teams of up to <span class="text-chalk font-medium">6 people</span><br /><br />
-            <span class="text-chalk font-medium">£8</span> early bird<br />
-            <span class="text-chalk font-medium">£10</span> full price<br />
-            <span class="italic">(2-for-1 offers sometimes available)</span><br /><br />
+            <span class="text-chalk font-medium">£10</span> early bird<br />
+            <span class="text-chalk font-medium">£12</span> full price<br /><br />
             Prizes: camptastic Aldi finds &amp; a very generous bar tab
           </p>
         </div>

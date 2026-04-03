@@ -32,7 +32,7 @@
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a
-          href="https://www.eventbrite.co.uk/e/boyband-vs-girlband-quiz-tickets-1982508818243?aff=oddtdtcreator"
+          href="https://www.eventbrite.co.uk/e/pride-divas-pub-quiz-at-hillbilly-social-2026-tickets-1986421427964?aff=oddtdtcreator"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-primary w-full sm:w-auto !py-4 !px-10"
