@@ -51,7 +51,7 @@ const teams = [
   { name: 'All Sins', score: 68.5 },
   { name: 'Three Susies and a Bon', score: 66 },
   { name: 'Bowes Zone', score: 65 },
-  { name: 'Nul Sync', score: 62 },
+  { name: 'N11 Sync', score: 62 },
   { name: 'Palace Road Princesses', score: 59.5 },
   { name: 'Scrambled Eggs', score: 59 },
   { name: 'Girls Zone', score: 49 },
