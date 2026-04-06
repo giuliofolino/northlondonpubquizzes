@@ -45,6 +45,8 @@
 .gallery {
   padding: 7rem 1.5rem;
   background-color: var(--surface);
+  border-top: 3px solid transparent;
+  border-image: var(--rainbow) 1;
 }
 
 .container {

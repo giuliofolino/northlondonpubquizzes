@@ -8,7 +8,6 @@
       "
     />
     <div class="overlay" />
-    <div class="rainbow-bar top-bar" />
 
     <div class="content">
       <p class="eyebrow">Bi-monthly &nbsp;·&nbsp; The Hillbilly Social &nbsp;·&nbsp; North London</p>
@@ -52,6 +51,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-top: 3px solid transparent;
+  border-image: var(--rainbow) 1;
 }
 
 .bg {
@@ -66,13 +67,6 @@
   position: absolute;
   inset: 0;
   background-color: rgba(8, 8, 8, 0.65);
-}
-
-.top-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .content {

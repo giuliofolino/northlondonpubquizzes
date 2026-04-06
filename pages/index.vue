@@ -3,19 +3,12 @@
     <TheNavbar />
     <main>
       <HeroSection />
-      <RainbowDivider />
       <AboutSection />
-      <RainbowDivider />
       <TicketsSection />
-      <RainbowDivider />
       <LeaderboardSection />
-      <RainbowDivider />
       <GallerySection />
-      <RainbowDivider />
       <MailingSection />
-      <RainbowDivider />
       <CorporateSection />
-      <RainbowDivider />
       <ContactSection />
     </main>
     <TheFooter />

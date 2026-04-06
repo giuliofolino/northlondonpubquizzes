@@ -1,6 +1,5 @@
 <template>
   <footer class="footer">
-    <div class="rainbow-bar" />
     <div class="inner">
       <div class="main">
         <div class="brand">
@@ -53,7 +52,8 @@ const year = new Date().getFullYear()
 <style lang="scss" scoped>
 .footer {
   background-color: var(--ink);
-  border-top: 1px solid var(--faint);
+  border-top: 3px solid transparent;
+  border-image: var(--rainbow) 1;
 }
 
 .inner {

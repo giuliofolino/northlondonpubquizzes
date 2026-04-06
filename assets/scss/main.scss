@@ -30,11 +30,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.rainbow-bar {
-  height: 3px;
-  background: var(--rainbow);
-}
-
 .rainbow-text {
   background: var(--rainbow);
   -webkit-background-clip: text;
@@ -48,7 +43,7 @@ body {
   justify-content: center;
   padding: 0.8rem 2rem;
   font-family: var(--font-sans);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
