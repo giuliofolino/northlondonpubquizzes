@@ -7,10 +7,13 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.12.0",
-    "nuxt": "^3.14.0"
+    "nuxt": "^3.14.0",
+    "prettier": "^3.8.1",
+    "sass": "^1.99.0"
   }
 }

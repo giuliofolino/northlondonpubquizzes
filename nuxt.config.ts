@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   ssr: false,
-  modules: ['@nuxtjs/tailwindcss'],
-  css: ['~/assets/css/main.css'],
+  modules: [],
+  css: ['~/assets/scss/main.scss'],
   app: {
     head: {
       title: 'North London Pub Quizzes',

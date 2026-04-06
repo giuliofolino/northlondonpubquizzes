@@ -1,3 +1,3 @@
 <template>
-  <div class="rainbow-bar w-full" />
+  <div class="rainbow-bar" />
 </template>

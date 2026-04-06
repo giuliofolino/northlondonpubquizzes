@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-ink text-chalk">
+  <div class="page">
     <TheNavbar />
     <main>
       <HeroSection />
@@ -21,3 +21,11 @@
     <TheFooter />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.page {
+  min-height: 100vh;
+  background-color: var(--ink);
+  color: var(--chalk);
+}
+</style>

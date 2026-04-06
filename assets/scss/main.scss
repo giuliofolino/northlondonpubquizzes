@@ -1,4 +1,12 @@
 :root {
+  --ink: #080808;
+  --surface: #141414;
+  --lift: #1e1e1e;
+  --chalk: #f5f5f0;
+  --muted: #888888;
+  --faint: #2a2a2a;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
   --rainbow: linear-gradient(
     90deg,
     #ff0018 0%,
@@ -16,13 +24,12 @@ html {
 }
 
 body {
-  background-color: #080808;
-  color: #f5f5f0;
-  font-family: 'DM Sans', system-ui, sans-serif;
+  background-color: var(--ink);
+  color: var(--chalk);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Rainbow utility classes */
 .rainbow-bar {
   height: 3px;
   background: var(--rainbow);
@@ -35,33 +42,35 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Buttons */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0.8rem 2rem;
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #080808;
+  color: var(--ink) !important;
   background: var(--rainbow);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
   cursor: pointer;
   border: none;
-}
+  text-decoration: none;
 
-.btn-primary:hover {
-  opacity: 0.88;
-  transform: translateY(-1px);
-}
+  &:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+  }
 
-.btn-primary:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  transform: none;
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
 }
 
 .btn-outline {
@@ -69,18 +78,22 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0.8rem 2rem;
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #f5f5f0;
+  color: var(--chalk);
   border: 1px solid rgba(245, 245, 240, 0.4);
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+  text-decoration: none;
 
-.btn-outline:hover {
-  background-color: #f5f5f0;
-  color: #080808;
-  border-color: #f5f5f0;
+  &:hover {
+    background-color: var(--chalk);
+    color: var(--ink);
+    border-color: var(--chalk);
+  }
 }
