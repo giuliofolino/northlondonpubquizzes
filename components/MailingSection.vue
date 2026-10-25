@@ -4,7 +4,7 @@
       <p class="eyebrow">Stay in the Loop</p>
       <h2 class="title">Join the Mailing List</h2>
       <p class="subtitle">
-        Be the first to know about upcoming quiz nights, early bird tickets, and all the fabulous
+        Be the first to know about upcoming quiz nights, ticket releases, and all the fabulous
         gossip.
       </p>
 

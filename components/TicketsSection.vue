@@ -1,50 +1,75 @@
 <template>
   <section id="tickets" class="tickets">
     <div class="container">
-      <p class="eyebrow">Next Event</p>
+      <p class="eyebrow">Upcoming Events</p>
 
       <h2 class="title">
-        Pride<br />
-        <em class="rainbow-text">Divas Quiz</em>
+        Grab Your<br />
+        <em class="rainbow-text">Tickets</em>
       </h2>
 
-      <p class="date">Thursday 4th June 2026</p>
       <p class="venue">
         The Hillbilly Social &nbsp;·&nbsp; Bar &amp; food available from 6pm &nbsp;·&nbsp; Quiz
         7:30pm sharp
       </p>
 
-      <p class="description">
-        Show off your music, rainbow and hun culture knowledge in a fun, welcoming, slightly
-        unhinged atmosphere. All proceeds go to the free
-        <a href="http://bowesparkpride.org.uk" target="_blank" rel="noopener noreferrer" class="link"
-          >Bowes Park Pride x Myddleton Road Market</a
-        >
-        community event on 5th July.
-      </p>
+      <ul class="events">
+        <li v-for="event in events" :key="event.name" class="event">
+          <div class="event-info">
+            <h3 class="event-name">{{ event.name }}</h3>
+            <p v-if="event.date" class="event-date">{{ event.date }}</p>
+          </div>
+          <span v-if="event.soldOut" class="sold-out">Sold Out</span>
+          <a
+            v-else
+            :href="event.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary event-btn"
+          >
+            Book Now
+          </a>
+        </li>
+      </ul>
 
       <a
-        href="https://www.eventbrite.co.uk/e/pride-divas-pub-quiz-at-hillbilly-social-2026-tickets-1986421427964?aff=oddtdtcreator"
+        href="https://bowes-park-pride.sumupstore.com/"
         target="_blank"
         rel="noopener noreferrer"
         class="btn-primary cta"
       >
-        Book on Eventbrite
+        View All Tickets
       </a>
 
       <div class="pricing">
-        <div class="price-item border-right">
-          <p class="amount">£10</p>
-          <p class="label">Early Bird</p>
-        </div>
         <div class="price-item">
           <p class="amount">£12</p>
-          <p class="label">Full Price</p>
+          <p class="label">Per Ticket</p>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const events = [
+  {
+    name: 'Halloween Quiz',
+    url: 'https://bowes-park-pride.sumupstore.com/product/halloween-quiz-tickets',
+    soldOut: true,
+  },
+  {
+    name: 'Camp Christmas Quiz',
+    date: 'Thursday 10th December 2026',
+    url: 'https://bowes-park-pride.sumupstore.com/product/camp-christmas-quiz-tickets',
+  },
+  {
+    name: 'Traitors Quiz',
+    date: 'Thursday 21st January 2027',
+    url: 'https://bowes-park-pride.sumupstore.com/product/traitors-quiz',
+  },
+]
+</script>
 
 <style lang="scss" scoped>
 .tickets {
@@ -78,37 +103,63 @@
   margin-bottom: 0.5rem;
 }
 
-.date {
-  font-family: var(--font-sans);
-  color: var(--muted);
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.125rem;
-}
-
 .venue {
   font-family: var(--font-sans);
   color: var(--muted);
   font-size: 0.875rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.description {
+.events {
+  list-style: none;
+  margin: 0 0 3rem;
+  padding: 0;
+  border: 1px solid var(--faint);
+  text-align: left;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem;
+
+  & + & {
+    border-top: 1px solid var(--faint);
+  }
+}
+
+.event-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--chalk);
+}
+
+.event-date {
   font-family: var(--font-sans);
   color: var(--muted);
-  max-width: 40rem;
-  margin: 0 auto 3rem;
-  line-height: 1.625;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
 }
 
-.link {
-  color: inherit;
-  text-decoration: underline;
-  transition: color 0.2s ease;
+.event-btn {
+  flex-shrink: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+}
 
-  &:hover {
-    color: var(--chalk);
-  }
+.sold-out {
+  flex-shrink: 0;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  border: 1px solid var(--faint);
+  padding: 0.75rem 1.5rem;
 }
 
 .cta {
@@ -127,10 +178,6 @@
   flex: 1;
   padding: 2rem 1rem;
   text-align: center;
-
-  &.border-right {
-    border-right: 1px solid var(--faint);
-  }
 }
 
 .amount {

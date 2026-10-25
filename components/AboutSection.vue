@@ -72,8 +72,7 @@
           </div>
           <h3 class="card-title">How It Works</h3>
           <p class="body">
-            <strong>£10</strong> early bird<br />
-            <strong>£12</strong> full price<br /><br />
+            <strong>£12</strong> per ticket<br /><br />
             Prizes: camptastic Aldi finds &amp; a very generous bar tab
           </p>
         </div>

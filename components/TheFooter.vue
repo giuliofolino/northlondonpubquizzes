@@ -25,12 +25,12 @@
           </a>
 
           <a
-            href="https://www.eventbrite.co.uk/o/north-london-pub-quizzes-59899390063"
+            href="https://bowes-park-pride.sumupstore.com/"
             target="_blank"
             rel="noopener noreferrer"
             class="text-link"
           >
-            Eventbrite
+            Tickets
           </a>
 
           <a href="#contact" class="text-link">Contact</a>

@@ -11,7 +11,7 @@
         <li><a href="#contact">Contact</a></li>
         <li>
           <a
-            href="https://www.eventbrite.co.uk/e/boyband-vs-girlband-quiz-tickets-1982508818243?aff=oddtdtcreator"
+            href="https://bowes-park-pride.sumupstore.com/"
             target="_blank"
             rel="noopener noreferrer"
             class="btn-primary ticket-btn"
@@ -41,7 +41,7 @@
           <li><a href="#contact" @click="menuOpen = false">Contact</a></li>
           <li>
             <a
-              href="https://www.eventbrite.co.uk/e/boyband-vs-girlband-quiz-tickets-1982508818243?aff=oddtdtcreator"
+              href="https://bowes-park-pride.sumupstore.com/"
               target="_blank"
               rel="noopener noreferrer"
               class="btn-primary"

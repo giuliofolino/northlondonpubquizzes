@@ -24,7 +24,7 @@
 
       <div class="cta">
         <a
-          href="https://www.eventbrite.co.uk/e/pride-divas-pub-quiz-at-hillbilly-social-2026-tickets-1986421427964?aff=oddtdtcreator"
+          href="https://bowes-park-pride.sumupstore.com/"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-primary cta-btn"
